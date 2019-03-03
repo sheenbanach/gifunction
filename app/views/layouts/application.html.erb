@@ -2,6 +2,13 @@
 <html>
   <head>
     <title>Gifunction</title>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/clipboard.js/1.5.3/clipboard.min.js"></script>
+    <script>
+        $(function () {
+          var clipboard = new Clipboard('.btn');
+        });
+    </script>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -10,6 +17,8 @@
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+    
   </head>
 
   <body>

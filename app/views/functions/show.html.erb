@@ -1,18 +1,39 @@
 <div class="container">
   <div class="jumbotron">
-    <h1>Bootstrap Tutorial</h1>      
-    <p>Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile-first projects on the web.</p>
+    <h1>image関数生成完了</h1>      
+    <p>クリップボードにコピーして使える</p>
   </div>
-  <p>This is some text.</p>      
-  <p>This is another text.</p>      
+       
 
 <p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Url:</strong>
-  <%= @GI %>
-</p>
-
-<%= link_to 'Edit', edit_function_path(@function) %> |
+<div class="row">
+  <!--グリットシステム最初-->
+  <div class="col-sm-2"></div>
+  
+  
+  <!--グリットシステム　真ん中-->
+  <div class="col-sm-8">
+      <p>Google SpreahSheetに張り付ける用の関数が生成されました。</p> 
+ <!-- コピー対象 -->
+    <input id="foo" value="<%= @GI %>" size="60">
+    <!-- コピーボタン -->
+    <button class="btn" data-clipboard-target="#foo">
+        コピー
+    </button>   
+    <br>
+    <!--編集戻るボタン-->
+      <%= link_to 'Edit', edit_function_path(@function) %> |
 <%= link_to 'Back', functions_path %>
+      
+      
+  </div>
+  
+  <!--グリッドシステム最後-->
+  <div class="col-sm-2"></div>
+</div>
+
+<!--クリップボードにコピー -->
+ 
+
+
 </div>
