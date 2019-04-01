@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: hca2h2qua
+  api_key: '791329416764336'
+  api_secret: crvxsw0vc7D9BhDYu01AarNTcxk
+  enhance_image_tag: true
+  static_file_support: false
+production:
+  cloud_name: hca2h2qua
+  api_key: '791329416764336'
+  api_secret: crvxsw0vc7D9BhDYu01AarNTcxk
+  enhance_image_tag: true
+  static_file_support: true
+test:
+  cloud_name: hca2h2qua
+  api_key: '791329416764336'
+  api_secret: crvxsw0vc7D9BhDYu01AarNTcxk
+  enhance_image_tag: true
+  static_file_support: false
